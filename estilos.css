@@ -1,0 +1,295 @@
+/* ======================================================= */
+/* 🚀 VARIÁVEIS DE CORES E FONTES (MOLDA VEL EM PORTUGUÊS) */
+/* ======================================================= */
+
+:root {
+    /* Cores Principais (Inspiradas no Habbo Azul/Amarelo/Verde) */
+    --cor-primaria: #0087c5;       /* Azul do Habbo (principal) */
+    --cor-secundaria: #34495e;     /* Azul Escuro/Cinza para Contraste */
+    --cor-destaque: #f8c908;       /* Amarelo/Laranja (Destaque/Botão) */
+    --cor-fundo-claro: #ecf0f1;    /* Fundo de Seção Clara (Branco/Cinza Claro) */
+    --cor-fundo-escuro: #2c3e50;   /* Fundo de Seção Escura */
+    --cor-texto-claro: #ffffff;    /* Texto para fundos escuros */
+    --cor-texto-escuro: #343a40;   /* Texto para fundos claros */
+
+    /* Fontes */
+    --fonte-principal: 'Poppins', sans-serif; /* Fonte moderna e limpa */
+    --fonte-titulo-habbo: 'Poppins', cursive; /* Título pode ter um estilo levemente diferente */
+}
+
+/* ======================================================= */
+/* ✏️ ESTILOS GERAIS */
+/* ======================================================= */
+
+body {
+    font-family: var(--fonte-principal); /* Aplica a fonte principal */
+    background-color: var(--cor-fundo-claro); /* Fundo geral do corpo */
+    padding-top: 56px; /* Espaço para o navbar fixo do Bootstrap */
+    color: var(--cor-texto-escuro);
+}
+
+/* Classe para todas as seções */
+.secao-habbo {
+    min-height: 80vh; /* Garante altura mínima para uma boa visualização */
+    padding: 60px 0;
+}
+
+/* ======================================================= */
+/* 🧭 NAV BAR E MENU */
+/* ======================================================= */
+
+/* Fundo da barra de navegação */
+.fundo-primario-habbo {
+    background-color: var(--cor-primaria) !important; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do nome do site na nav bar */
+.nome-site-habbo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-destaque) !important;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); /* Leve sombra para destaque */
+}
+
+/* Estilo dos links do menu */
+.link-menu-habbo {
+    color: var(--cor-texto-claro) !important;
+    font-weight: 600;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    padding: 8px 15px; /* Adiciona padding para um toque maior */
+}
+
+/* Efeito Hover nos links do menu */
+.link-menu-habbo:hover,
+.link-menu-habbo:focus {
+    color: var(--cor-destaque) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo do link ativo (quando a seção está visível) */
+.link-menu-habbo.ativo {
+    color: var(--cor-destaque) !important;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ======================================================= */
+/* 📢 SEÇÕES E CONTEÚDO */
+/* ======================================================= */
+
+/* Fundo da primeira seção (Hero/Header) */
+.fundo-secundario-claro {
+    background-color: var(--cor-primaria); /* Cor do header */
+    background-image: linear-gradient(135deg, var(--cor-primaria) 0%, #00a4e6 100%); /* Gradiente sutil */
+    height: 90vh; /* Altura da tela para a primeira seção */
+}
+
+/* Fundo das outras seções (alternadas) */
+.fundo-secundario-escuro {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+}
+
+.fundo-primario-claro {
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+}
+
+/* Estilo do título principal (Início) */
+.titulo-principal-habbo {
+    font-family: var(--fonte-titulo-habbo);
+    color: var(--cor-destaque);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo dos subtítulos/texto principal */
+.subtitulo-habbo {
+    font-weight: 300;
+    color: var(--cor-texto-claro);
+}
+
+/* Estilo dos títulos de seção */
+.titulo-secao-habbo {
+    font-weight: 700;
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--cor-destaque);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilo para textos em geral */
+.texto-principal-habbo {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ======================================================= */
+/* 🖲️ BOTÕES */
+/* ======================================================= */
+
+/* Botão Principal (Chamada para Ação) */
+.botao-principal-habbo {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto-escuro); /* Texto escuro no amarelo */
+    border: none;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botao-principal-habbo:hover {
+    background-color: #ffd700; /* Um amarelo mais vibrante no hover */
+    color: var(--cor-texto-escuro);
+    transform: translateY(-2px); /* Efeito de elevação sutil */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Botão Secundário (para Loja, por exemplo) */
+.botao-secundario-habbo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    border: 2px solid var(--cor-destaque);
+    font-weight: 600;
+}
+
+.botao-secundario-habbo:hover {
+    background-color: #00a4e6;
+    color: var(--cor-texto-claro);
+    border-color: var(--cor-destaque);
+}
+
+/* ======================================================= */
+/* 💳 CARTÕES E DESTAQUES */
+/* ======================================================= */
+
+/* Cartão de Notícia/Conteúdo */
+.cartao-noticia-habbo {
+    background-color: var(--cor-texto-claro);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartao-noticia-habbo:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem dentro do Cartão */
+.imagem-cartao-habbo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Título e Texto do Cartão */
+.titulo-cartao-habbo {
+    color: var(--cor-primaria);
+    font-weight: 600;
+}
+.texto-cartao-habbo {
+    font-size: 0.95rem;
+    color: var(--cor-texto-escuro);
+}
+
+/* Link Secundário (Ler Mais) */
+.link-secundario-habbo {
+    color: var(--cor-destaque);
+    font-weight: 600;
+    text-decoration: none;
+}
+.link-secundario-habbo:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+/* Cartão de Loja/Serviço */
+.cartao-loja-habbo {
+    background-color: var(--cor-texto-claro);
+    border: 3px solid var(--cor-destaque);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge (Etiqueta) de destaque */
+.texto-badge-habbo {
+    background-color: var(--cor-primaria) !important;
+    color: var(--cor-texto-claro);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* ======================================================= */
+/* ⚙️ FORMULÁRIOS (SCRIPTS) */
+/* ======================================================= */
+
+/* Estilo do formulário em geral */
+.formulario-habbo {
+    background-color: var(--cor-texto-claro);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Label (rótulo) do campo */
+.label-habbo {
+    color: var(--cor-primaria);
+    font-weight: 600;
+}
+
+/* Campo de Input/Textarea */
+.campo-habbo {
+    border: 2px solid var(--cor-primaria);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo-habbo:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 0 0.25rem rgba(248, 201, 8, 0.25); /* Sombra suave amarela no foco */
+}
+
+/* ======================================================= */
+/* 🦶 RODAPÉ */
+/* ======================================================= */
+
+.texto-rodape-habbo {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.link-rodape-habbo {
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+.link-rodape-habbo:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* ======================================================= */
+/* 🌟 ANIMAÇÕES */
+/* ======================================================= */
+
+/* Animação simples de entrada para o Header */
+.animacao-entrada {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Variáveis para atraso da animação */
+.atraso-1 { animation-delay: 0.2s; }
+.atraso-2 { animation-delay: 0.4s; }
+
+/* Keyframes da animação */
+@keyframes fade-in-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
