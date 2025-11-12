@@ -1,9 +1,9 @@
 /* ======================================================= */
-/* 🚀 VARIÁVEIS DE CORES E FONTES (MOLDA VEL EM PORTUGUÊS) */
+/* 🚀 VARIÁVEIS DE CORES E FONTES (MOLDAVEL EM PORTUGUÊS) */
 /* ======================================================= */
 
 :root {
-    /* Cores Principais (Inspiradas no Habbo Azul/Amarelo/Verde) */
+    /* Cores Principais (Inspiradas no Habbo Azul/Amarelo/Verde Clássico) */
     --cor-primaria: #0087c5;       /* Azul do Habbo (principal) */
     --cor-secundaria: #34495e;     /* Azul Escuro/Cinza para Contraste */
     --cor-destaque: #f8c908;       /* Amarelo/Laranja (Destaque/Botão) */
@@ -26,12 +26,19 @@ body {
     background-color: var(--cor-fundo-claro); /* Fundo geral do corpo */
     padding-top: 56px; /* Espaço para o navbar fixo do Bootstrap */
     color: var(--cor-texto-escuro);
+    
+    /* BACKGROUND DO BODY REMOVIDO para que o header controle o próprio fundo */
 }
-
+span{
+    color: #ddd;
+}
 /* Classe para todas as seções */
 .secao-habbo {
     min-height: 80vh; /* Garante altura mínima para uma boa visualização */
     padding: 60px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    margin-bottom: 30px; 
 }
 
 /* ======================================================= */
@@ -78,21 +85,79 @@ body {
 /* 📢 SEÇÕES E CONTEÚDO */
 /* ======================================================= */
 
-/* Fundo da primeira seção (Hero/Header) */
-.fundo-secundario-claro {
-    background-color: var(--cor-primaria); /* Cor do header */
-    background-image: linear-gradient(135deg, var(--cor-primaria) 0%, #00a4e6 100%); /* Gradiente sutil */
-    height: 90vh; /* Altura da tela para a primeira seção */
+/* FUNDO DO HEADER (SEÇÃO INÍCIO) - COM A IMAGEM headbgn.png */
+/* ... (Dentro da seção 📢 SEÇÕES E CONTEÚDO) ... */
+
+/* Estilo para o texto da dissertação para se destacar no fundo escuro */
+.texto-claro-destaque {
+    color: var(--cor-texto-claro);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    font-weight: 400;
 }
 
-/* Fundo das outras seções (alternadas) */
+.aviso-manutencao-habbo {
+    /* Fundo branco/claro semi-transparente */
+    background-color: rgba(255, 255, 255, 0.95); 
+    /* Borda de interface (azul primário) */
+    border: 4px solid var(--cor-primaria); 
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    /* Sombra para dar profundidade de janela */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 135, 197, 0.1); 
+    transition: transform 0.3s;
+}
+
+.aviso-manutencao-habbo:hover {
+    transform: scale(1.01); /* Leve efeito de zoom no hover */
+}
+
+/* Estilo para o título do Formulário de Suporte */
+.titulo-suporte-habbo {
+    color: var(--cor-primaria);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Estilo para o campo de upload de arquivo (Bootstrap usa .form-control) */
+#uploadImagens {
+    /* Mantenha o estilo padrão do Bootstrap, mas garanta a cor do texto/fundo */
+    background-color: var(--cor-texto-claro); 
+    border-color: var(--cor-primaria);
+}
+#uploadImagens:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 0 0.25rem rgba(248, 201, 8, 0.25);
+}
+
+.header-tematico-habbo {
+    background-image: url('fotos/headbgn.png'); /* Sua imagem de fundo azul */
+    background-size: auto; 
+    background-repeat: repeat-x; 
+    background-position: center top; 
+    background-attachment: scroll; 
+    background-color: var(--cor-primaria); /* Cor de fallback se a imagem falhar */
+
+    height: 70vh; /* Altura ajustada para o conteúdo principal */
+    min-height: 400px;
+    
+    /* Centralização Horizontal e Vertical */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Fundo das seções escuras - SEMI-TRANSPARENTE (Usando RGBA) */
 .fundo-secundario-escuro {
-    background-color: var(--cor-fundo-escuro);
+    /* Cor #2c3e50 com 90% de opacidade */
+    background-color: rgba(44, 62, 80, 0.9);
     color: var(--cor-texto-claro);
 }
 
+/* Fundo das seções claras - SEMI-TRANSPARENTE (Usando RGBA) */
 .fundo-primario-claro {
-    background-color: var(--cor-fundo-claro);
+    /* Cor #ecf0f1 com 95% de opacidade */
+    background-color: rgba(236, 240, 241, 0.95);
     color: var(--cor-texto-escuro);
 }
 
@@ -100,10 +165,16 @@ body {
 .titulo-principal-habbo {
     font-family: var(--fonte-titulo-habbo);
     color: var(--cor-destaque);
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    line-height: 1.2; 
+    font-size: 3.5rem; /* Ajusta o tamanho do título */
+    /* Sombra para destaque no fundo azul */
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8), 
+                 -2px -2px 0 rgba(0, 0, 0, 0.8), 
+                 2px -2px 0 rgba(0, 0, 0, 0.8), 
+                 -2px 2px 0 rgba(0, 0, 0, 0.8); 
 }
 
-/* Estilo dos subtítulos/texto principal */
+/* Estilo dos subtítulos/texto principal (remover se não estiver no header) */
 .subtitulo-habbo {
     font-weight: 300;
     color: var(--cor-texto-claro);
@@ -292,4 +363,146 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* ======================================================= */
+/* 📱 MEDIA QUERIES (AJUSTES PARA MOBILE E TABLET) */
+/* ======================================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. AJUSTE DO HEADER TEMÁTICO */
+    .header-tematico-habbo {
+        /* Diminui a altura para garantir que o usuário veja mais conteúdo abaixo */
+        height: 50vh; 
+        min-height: 300px;
+        background-position: center bottom; /* Garante que a imagem se ajuste bem */
+    }
+
+    /* 2. AJUSTE DO TÍTULO PRINCIPAL */
+    .titulo-principal-habbo {
+        /* Reduz o tamanho da fonte para caber na tela sem quebrar */
+        font-size: 2.5rem; 
+        /* Reduz a margem do topo para que o texto fique bem posicionado */
+        margin-top: 10px;
+    }
+
+    /* 3. AJUSTE DE SEÇÕES E PADDING */
+    .secao-habbo {
+        /* Reduz o padding interno das seções para aproveitar melhor o espaço */
+        padding: 40px 15px;
+        min-height: auto; /* Remove a altura mínima forçada em telas pequenas */
+    }
+
+    /* 4. AJUSTE DO NAV BAR (LOGOTIPO) */
+    .navbar-brand.nome-site-habbo {
+        /* Garante que o nome do site não seja muito grande */
+        font-size: 1.3rem;
+    }
+
+    /* 5. AJUSTE DE TEXTOS E ELEMENTOS INTERNOS */
+    .texto-principal-habbo {
+        font-size: 1rem;
+    }
+    
+    /* Remove a sombra extra nos botões em mobile para performance */
+    .botao-principal-habbo {
+        box-shadow: none;
+        padding: 10px 20px;
+    }
+    
+    /* Ajuste para o padding das caixas de aviso (Notícias/Loja) */
+    .aviso-manutencao-habbo {
+        padding: 20px;
+    }
+}
+/* ======================================================= */
+/* 📰 ESTILOS ESPECÍFICOS DO ARTIGO (NOTÍCIAS) */
+/* ======================================================= */
+
+/* O BLOCÃO DO ARTIGO (Simulando a caixa de conteúdo principal) */
+.bloco-artigo-habbo {
+    /* Fundo claro da nossa interface, mas com alta opacidade */
+    background-color: rgba(255, 255, 255, 0.98); 
+    border: 5px solid var(--cor-secundaria); /* Borda Azul Escuro */
+    border-radius: 10px;
+    /* Sombra profunda para destacar o artigo do fundo do site */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); 
+    color: var(--cor-texto-escuro);
+    max-width: 900px; /* Limita a largura para melhor leitura */
+    margin: 0 auto; /* Centraliza o bloco na seção */
+}
+
+/* Título Principal do Artigo */
+.titulo-artigo-habbo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--cor-primaria); /* Azul do Habbo */
+    line-height: 1.1;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulos dentro do Corpo (Destaque para Tópicos) */
+.subtitulo-corpo-artigo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--cor-destaque); /* Amarelo de Destaque */
+    border-left: 5px solid var(--cor-destaque); /* Borda lateral amarela */
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+/* Data e Informações da Postagem */
+.data-artigo {
+    font-size: 0.9rem;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Texto do Corpo */
+.texto-artigo-corpo {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Caixa de Detalhes da Campanha (Fundo Amarelo) */
+.cartao-campanha-habbo {
+    background-color: var(--cor-destaque); /* Fundo Amarelo Forte */
+    color: var(--cor-texto-escuro);
+    border-radius: 5px;
+    border: 2px solid #b39b00; /* Borda um pouco mais escura */
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+/* Lista de Detalhes (Estilizada com Ícone) */
+.lista-artigo-habbo {
+    list-style-type: none; /* Remove bolinhas padrão */
+    padding-left: 15px;
+    font-size: 1.1rem;
+}
+.lista-artigo-habbo li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 8px;
+    /* Adiciona um ícone customizado */
+    &::before {
+        content: "⭐"; /* Ícone de estrela temático */
+        margin-right: 0.5em;
+        color: var(--cor-destaque);
+    }
+}
+
+/* Imagem com Borda (Para destaque visual) */
+.imagem-artigo-borda {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--cor-destaque);
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fnst{
+    
 }
