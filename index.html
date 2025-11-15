@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habbiano.com</title>
+    <title>Habbiano.com - O Fã-Site Moderno de Habbo Origins</title>
     
     <base href="https://habbiano.com/"> 
-
     <link rel="icon" type="image/png" href="fotos/habbo.png?v=3.0">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,11 +14,11 @@
 
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#menuPrincipal" data-bs-offset="60">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fundo-primario-habbo fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fundo-primario-habbo fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand nome-site-habbo" href="#">Habbiano.com</a> 
+            <a class="navbar-brand nome-site-habbo" href="#inicio">Habbiano.com</a> 
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,16 +27,13 @@
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link link-menu-habbo ativo" href="#inicio">Início</a>
+                        <a class="nav-link link-menu-habbo" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-menu-habbo" href="#noticias">Notícias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-menu-habbo" href="#loja">Loja</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-menu-habbo" href="#scripts">ferramentas</a>
+                        <a class="nav-link link-menu-habbo" href="#loja">Comunidade</a>
                     </li>
                     <li class="nav-item"> 
                         <a class="nav-link link-menu-habbo" href="#sobre">Sobre</a>
@@ -46,185 +42,118 @@
             </div>
         </div>
     </nav>
-    <main data-bs-spy="scroll" data-bs-target="#menuPrincipal" data-bs-root-margin="0px 0px -40% 0px" data-bs-smooth-scroll="true" class="scrollspy-exemplo" tabindex="0">
 
-        <header id="inicio" class="secao-habbo header-tematico-habbo text-white text-center">
+    <header id="inicio" class="header-tematico-habbo text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="titulo-principal-habbo display-3 fw-bold animacao-entrada">Bem-vindo ao Habbiano</h1>
+            <p class="subtitulo-habbo fs-4 animacao-entrada atraso-1">Seu fã-site moderno para tudo de Habbo Origins.</p>
+            <a href="#noticias" class="btn botao-principal-habbo btn-lg mt-4 animacao-entrada atraso-2">Ver Últimas Notícias</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="noticias" class="secao-habbo py-5">
             <div class="container">
+                <h2 class="titulo-secao-habbo text-center mb-5">📰 Últimas Notícias</h2>
                 
-                <h1 class="titulo-principal-habbo display-3 fw-bold animacao-entrada">Habbiano.com:<span> Seu site favorito de Habbo Origins</span></h1>
-                <a href="#noticias" class="btn botao-principal-habbo btn-lg mt-4 animacao-entrada atraso-2">Explorar Conteúdo Exclusivo</a>
-            </div>
-        </header>
-      <section id="noticias" class="secao-habbo fundo-primario-claro py-5">
-            <div class="container">
-                
-                <h2 class="titulo-secao-habbo mb-5 text-center">📰 Últimas Notícias</h2>
-                
-                <div class="bloco-artigo-habbo p-4 p-md-5">
-
-                    <p class="data-artigo">11 de novembro de 2025 | Notícias Origins</p>
-                    <h1 class="titulo-artigo-habbo mb-4">
-                        AS MÁQUINAS DE GARRA DE NEGGS RARAS JÁ ESTÃO DISPONÍVEIS!
-                    </h1>
-
-                    <div class="cartao-campanha-habbo p-3 mb-4">
-                        <h3 class="fw-bold mb-0">Campanhas & Atividades</h3>
-                        <p class="mb-0">50 Créditos, disponíveis até sexta-feira, às 12h (Horário Habbiano).</p>
-                    </div>
-                    
-                    <div class="text-center mb-5">
-                        <img src="fotos/garra-neggs-raras.png" alt="Máquina de Garra Rara de Neggs" class="img-fluid imagem-artigo-borda">
-                    </div>
-
-                    <h2 class="subtitulo-corpo-artigo mb-3">Dá para acreditar? Mais Raros no Hotel!</h2>
-                    
-                    <p class="texto-artigo-corpo">
-                        Direto dos cofres de Neofia e girando rumo ao Habbo Origins, a Máquina de Garra de Neggs é o raro desta semana — e convenhamos, é muito fofa. Pense nela como a mistura perfeita entre nostalgia, conforto gamer e aquele *'sim, gastei todos os meus créditos nisso, mas valeu a pena.'* Garanta a sua antes que a sexta-feira chegue, ou você vai se arrepender!
-                    </p>
-                    
-                    <h2 class="subtitulo-corpo-artigo mt-4 mb-3"> DETALHES IMPORTANTES:</h2>
-                    
-                    <ul class="lista-artigo-habbo">
-                        <li>**Nome:** Máquina de Garra de Neggs Raras</li>
-                        <li>**Preço:** 50 Créditos</li>
-                        <li>**Disponibilidade:** Até Sexta-feira, 15 de Novembro, às 12:00 BR</li>
-                        <li>**Onde Comprar:** Apenas no Catálogo (Raros)</li>
-                        <li>**Alerta:** É um item **RARO** e nunca mais voltará ao catálogo!</li>
-                    </ul>
-
-                    <p class="texto-artigo-corpo mt-4">
-                        Não perca a chance de adicionar mais esta joia à sua coleção. E lembre-se: para ficar por dentro de todos os lançamentos de itens raros e eventos do Origins, continue acompanhando o **Habbiano.com**!
-                    </p><br>
-                    <img src="fotos/fasite.png" alt="Máquina de Garra Rara de Neggs" class="fnst" >
-                    
-                </div>
-                
-                <div class="text-center mt-5">
-                    <a href="#inicio" class="btn botao-principal-habbo">Voltar ao Topo</a>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="loja" class="secao-habbo fundo-primario-claro py-5">
-            <div class="container text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 70vh;">
-                
-                <h2 class="titulo-secao-habbo mb-5">🛒 Loja de Itens Raros</h2>
-                
-                <div class="aviso-manutencao-habbo p-5">
-                    
-                    <img src="fotos/const.png" alt="Em Construção" class="img-fluid mb-4 animacao-entrada" style="max-width: 150px;">
-                    
-                    <h3 class="titulo-cartao-habbo mb-3 animacao-entrada atraso-1">Marketplace em Construção!</h3>
-                    
-                    <p class="texto-principal-habbo lead animacao-entrada atraso-2">
-                        Estamos finalizando os preparativos para o **Marketplace de Itens Raros**. Em breve, você poderá comprar Mobis e Caixas Surpresa com segurança.
-                    </p>
-                    <p class="texto-principal-habbo animacao-entrada atraso-3">Agradecemos a paciência! Nossa loja estará no ar em breve.</p>
-                </div>
-
-            </div>
-        </section>
-
-       <section id="scripts" class="secao-habbo fundo-secundario-escuro py-5">
-            <div class="container">
-                <h2 class="titulo-secao-habbo mb-5 text-center">💻 Ferramentas Exclusivas G-Earth</h2>
-                
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-10 text-center">
-                        <p class="texto-principal-habbo texto-claro-destaque">
-                            Otimizar o tempo de jogo e maximizar o retorno é essencial na experiência Habbo Origins. Desenvolvemos extensões G-Earth de uso privado e seguro que automatizam processos de farm, desde a coleta de itens em eventos repetitivos até a execução de comandos complexos em quartos. Nossa tecnologia visa proporcionar uma experiência premium, focada em eficiência da sua conta.
-                        </p>
-                        <p class="texto-principal-habbo texto-claro-destaque">
-                            Compre uma licença exclusiva e tenha acesso a tutoriais detalhados e suporte 24h. Chega de perder horas em tarefas monótonas – maximize seus lucros e desfrute do que o Origins tem de melhor.
-                        </p>
-                    </div>
-                </div>
-                <!--  
-                <div class="row justify-content-center g-4 mb-5">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="cartao-loja-habbo p-4 h-100">
-                            <h3 class="titulo-cartao-habbo">Pacote Farm Pro</h3>
-                            <p class="texto-cartao-habbo">Script otimizado para coleta rápida de itens em eventos e jogos específicos do Habbo Origins. Detecção anti-ban embutida.</p>
-                            <span class="badge texto-badge-habbo" style="background-color: #28a745 !important;">R$ 49,90</span>
-                            <a href="#" class="btn botao-principal-habbo mt-3">Adquirir</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="cartao-loja-habbo p-4 h-100">
-                            <h3 class="titulo-cartao-habbo">Auto-Conclusão de Comando</h3>
-                            <p class="texto-cartao-habbo">Ferramenta essencial para construtores. Automatiza comandos de wireds complexos e cria pisos rapidamente.</p>
-                            <span class="badge texto-badge-habbo" style="background-color: #dc3545 !important;">R$ 29,90</span>
-                            <a href="#" class="btn botao-principal-habbo mt-3">Adquirir</a>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <div class="row justify-content-center">
+                <div class="row g-4">
                     <div class="col-lg-8">
-                        <form id="formularioUploadSuporte" class="formulario-habbo p-4">
-                            <h3 class="text-center mb-4 titulo-suporte-habbo">Suporte e Testemunhos</h3>
-                            <p class="text-center texto-principal-habbo mb-4">Envie seu testemunho de sucesso ou reporte um problema. Anexe imagens de prova (screenshot do farm/erro).</p>
+                        <div class="card card-habbo card-destaque h-100">
+                            <img src="fotos/garra-neggs-raras.png" class="card-img-top-pixel" alt="Raro Máquina de Garra">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-2">RARO</span>
+                                <h3 class="card-title titulo-card-habbo">Raro da Semana: Máquina de Garra de Neggs!</h3>
+                                <p class="card-text">Direto dos cofres de Neofia, o novo raro já está disponível por 50 créditos. Garanta o seu antes que acabe na sexta-feira!</p>
+                                <a href="artigo.html" class="btn botao-secundario-habbo">Ler mais...</a>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="mb-3">
-                                <label for="nomeUsuario" class="form-label label-habbo">Seu Nome/Nick</label>
-                                <input type="text" class="form-control campo-habbo" id="nomeUsuario" required>
+                    <div class="col-lg-4">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="card card-habbo h-100">
+                                    <div class="card-body">
+                                        <span class="badge bg-success mb-2">EVENTO</span>
+                                        <h3 class="card-title titulo-card-habbo fs-5">Fim de Semana de Farm</h3>
+                                        <p class="card-text">Prepare seus G-Earths! Evento de coleta especial começa hoje às 18h.</p>
+                                        <a href="#" class="btn botao-secundario-habbo btn-sm">Detalhes</a>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div class="mb-3">
-                                <label for="assunto" class="form-label label-habbo">Assunto</label>
-                                <input type="text" class="form-control campo-habbo" id="assunto" required>
+                            <div class="col-12">
+                                <div class="card card-habbo h-100">
+                                    <div class="card-body">
+                                        <span class="badge bg-info mb-2">GUIA</span>
+                                        <h3 class="card-title titulo-card-habbo fs-5">Guia de Wireds 2.0</h3>
+                                        <p class="card-text">Aprenda a automatizar seu quarto com nosso novo guia completo de Wireds.</p>
+                                        <a href="#" class="btn botao-secundario-habbo btn-sm">Ver Guia</a>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="mb-3">
-                                <label for="mensagemDetalhes" class="form-label label-habbo">Detalhes</label>
-                                <textarea class="form-control campo-habbo" id="mensagemDetalhes" rows="3" required></textarea>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="uploadImagens" class="form-label label-habbo">Anexar Imagens (Provas/Screenshots)</label>
-                                <input type="file" class="form-control" id="uploadImagens" multiple accept="image/*">
-                                <small class="text-muted">Formatos aceitos: JPG, PNG. Máx. 3 arquivos.</small>
-                            </div>
-                            
-                            <div class="d-grid gap-2 mt-4">
-                                <button type="submit" class="btn botao-principal-habbo">Enviar Suporte / Testemunho</button>
-                            </div>
-                            
-                            <div id="mensagemFeedbackUpload" class="alert alert-success mt-3 d-none" role="alert">
-                                Envio recebido! Analisaremos em breve.
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="sobre" class="secao-habbo fundo-secundario-escuro py-5">
+
+        <section id="loja" class="secao-habbo py-5 bg-light">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mb-4 mb-lg-0">
-                        <h2 class="titulo-secao-habbo mb-4">✨ Sobre o Habbiano</h2>
-                        <p class="texto-principal-habbo">O Habbiano nasceu da paixão pela era clássica do Habbo Hotel. Somos um fã site dedicado a preservar a memória, fornecer guias e as últimas notícias sobre o **Habbo Origins**, a versão que resgata a nostalgia dos anos 2000.</p>
-                        <p class="texto-principal-habbo">Nossa missão é ser a principal fonte de conteúdo para a comunidade que ama o Habbo antigo. Fique por dentro de todos os eventos, atualizações e curiosidades!</p>
-                    </div>
-                    <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                        <div class="cartao-destaque-habbo p-4 text-center">
-                            <h3 class="fw-bold">Comunidade</h3>
-                            <p class="mb-0">Mais de 10 mil fãs cadastrados!</p>
+                <h2 class="titulo-secao-habbo text-center mb-5">🛒 Comunidade e Ferramentas</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card card-habbo text-center h-100">
+                            <div class="card-body p-4">
+                                <img src="fotos/const.png" alt="Em Construção" class="img-fluid mb-3" style="max-width: 150px;">
+                                <h3 class="titulo-card-habbo">Marketplace em Breve!</h3>
+                                <p class="card-text">Estamos construindo um novo Marketplace para você trocar seus Mobis e Caixas Raras com total segurança. Fique de olho!</p>
+                                <a href="#" class="btn botao-principal-habbo disabled">Em Construção</a>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card card-habbo text-center h-100">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <img src="fotos/fasite.png" alt="Fã Site" class="img-fluid mb-3 mx-auto" style="max-width: 200px;">
+                                <h3 class="titulo-card-habbo">Ferramentas G-Earth</h3>
+                                <p class="card-text flex-grow-1">Otimize sua experiência no Origins. Nossas extensões G-Earth de uso privado e seguro automatizam processos de farm e comandos complexos. Maximize seus lucros e desfrute do melhor do jogo.</p>
+                                <a href="#contato" class="btn botao-secundario-habbo">Seja um Membro VIP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-habbo py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                         <img src="fotos/habbo.png" alt="Habbo H" class="img-fluid" style="max-width: 150px;">
+                    </div>
+                    <div class="col-lg-8">
+                        <h2 class="titulo-secao-habbo mb-4">Sobre o Habbiano.com</h2>
+                        <p class="fs-5">O Habbiano nasceu da paixão pela era clássica do Habbo Hotel. Somos um fã-site moderno dedicado a preservar a memória, fornecer guias e as últimas notícias sobre o **Habbo Origins**.</p>
+                        <p>Nossa missão é ser a principal fonte de conteúdo para a comunidade que ama o Habbo antigo, mas vive no mundo moderno. Fique por dentro de todos os eventos, atualizações e curiosidades!</p>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-    <footer class="fundo-primario-habbo py-3">
+
+    <footer class="fundo-primario-habbo py-4 mt-5">
         <div class="container text-center">
             <p class="texto-rodape-habbo mb-0">&copy; 2025 Habbiano.com | Fã Site de Habbo Origins.</p>
-            <p class="texto-rodape-habbo mt-1"><a href="#" class="link-rodape-habbo">Termos de Uso</a> | <a href="#" class="link-rodape-habbo">Política de Privacidade</a></p>
+            <p class="texto-rodape-habbo mt-1 mb-0"><a href="#" class="link-rodape-habbo">Termos de Uso</a> | <a href="#" class="link-rodape-habbo">Política de Privacidade</a></p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     <script src="scripts.js"></script>
 </body>
 </html>
